@@ -1,4 +1,3 @@
-#FNRS
 import pandas as pd
 import pvlib
 from pvlib import solarposition, irradiance
