@@ -23,11 +23,8 @@ def calculate_ghi():
         'tilt': tilt,
         'azimuth': azimuth,
     }
-
     response = requests.post(api_url, json=payload)
     result = response.json()
-
     return render_template('result.html', result=result)
-
 if __name__ == '__main__':
     app.run(debug=True)
