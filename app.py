@@ -2,11 +2,9 @@ from flask import Flask, render_template, request
 import requests
 
 app = Flask(__name__)
-
 @app.route('/')
 def index():
     return render_template('index.html')
-
 @app.route('/calculate_ghi', methods=['POST'])
 def calculate_ghi():
     latitude = float(request.form['latitude'])
